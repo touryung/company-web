@@ -1,0 +1,66 @@
+/* 底部信息 */
+footer {
+    margin-top: 124px;
+    background: #181818;
+    display: grid;
+    justify-items: center;
+    padding: 72px 0 24px;
+}
+.footer-menus {
+    width: 100%;
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    padding: 0 80px;
+    position: relative;
+}
+.menu-title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-us {
+    justify-self: start;
+    color: var(--text-color-lightest);
+}
+.contact-us p:not(:first-child) {
+    padding-bottom: 16px;
+}
+.menu-items li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+.menu-items li a {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--text-color-lightest);
+}
+.icp-info {
+    margin: 24px 0 16px;
+}
+.icp-info,
+.rights {
+    grid-column: 1 / -1;
+    justify-self: center;
+    color: white;
+}
+.scroll-top {
+    display: none;
+    position: relative;
+    z-index: 300;
+}
+.scroll-top a {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+}

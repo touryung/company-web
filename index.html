@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
+        <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/about-us.css" />
+        <link rel="stylesheet" href="css/showcases.css" />
+        <link rel="stylesheet" href="css/service.css" />
+        <link rel="stylesheet" href="css/team-intro.css" />
+        <link rel="stylesheet" href="css/data-section.css" />
+        <link rel="stylesheet" href="css/company-activities.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 头部区域 -->
+        <header>
+            <!-- logo -->
+            <div class="logo">Kreios</div>
+            <!-- 导航 -->
+            <nav>
+                <a href="#home">首页</a>
+                <a href="#about-us">关于我们</a>
+                <a href="#showcases">成功案例</a>
+                <a href="#service">服务流程</a>
+                <a href="#team-intro">团队介绍</a>
+                <a href="#company-activities">公司动态</a>
+                <i class="fas fa-search"></i>
+            </nav>
+            <!-- 页面缩小显示菜单标签 -->
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+            </div>
+        </header>
+        <!-- 轮播组件 -->
+        <div id="home" class="glide">
+            <!-- 轮播轨道 -->
+            <div class="glide__track" data-glide-el="track">
+                <!-- 所有轮播页面 -->
+                <div class="glide__slides">
+                    <!-- 单张轮播页面 -->
+                    <div class="glide__slide">
+                        <!-- 页面上元素 -->
+                        <div class="slide-caption">
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <button class="explore-btn">探索更多</button>
+                        </div>
+                        <!-- 背景遮罩层 -->
+                        <div class="backdrop"></div>
+                        <img src="images/people-in-couch-1024248.jpg" alt="" />
+                    </div>
+                    <div class="glide__slide">
+                        <div class="slide-caption left">
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <button class="explore-btn">探索更多</button>
+                        </div>
+                        <div class="backdrop"></div>
+                        <video src="videos/working-man.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+            </div>
+            <!-- 左右按钮 -->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+            </div>
+            <!-- 跳转圆点 -->
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <div class="glide__bullet" data-glide-dir="=0"></div>
+                <div class="glide__bullet" data-glide-dir="=1"></div>
+            </div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content-wrapper">
+            <!-- 关于我们 -->
+            <section id="about-us" class="about-us">
+                <h2 class="title1">关于我们</h2>
+                <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, illo.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 class="feature-title">品牌创意</h4>
+                        <p class="feature-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h4 class="feature-title">整合营销</h4>
+                        <p class="feature-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h4 class="feature-title">品牌创意</h4>
+                        <p class="feature-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-desktop"></i>
+                        <h4 class="feature-title">品牌创意</h4>
+                        <p class="feature-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4 class="feature-title">品牌创意</h4>
+                        <p class="feature-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 class="feature-title">品牌创意</h4>
+                        <p class="feature-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 成功案例 -->
+            <section id="showcases" class="showcases section-bg">
+                <h2 class="title1">成功案例</h2>
+                <div class="filter-btns">
+                    <button class="filter-btn active" data-filter="*">全部</button>
+                    <button class="filter-btn" data-filter=".web">WEB</button>
+                    <button class="filter-btn" data-filter=".mobile">移动</button>
+                    <button class="filter-btn" data-filter=".science">科研</button>
+                </div>
+                <div class="cases">
+                    <div class="case-item web science">
+                        <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="" />
+                    </div>
+                    <div class="case-item web science">
+                        <img src="images/photo-of-imac-near-macbook-1029757.jpg" alt="" />
+                    </div>
+                    <div class="case-item web">
+                        <img src="images/apple-laptop-notebook-office-39284.jpg" alt="" />
+                    </div>
+                    <div class="case-item web">
+                        <img src="images/apple-apple-device-design-desk-285814.jpg" alt="" />
+                    </div>
+                    <div class="case-item mobile">
+                        <img src="images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg" alt="" />
+                    </div>
+                    <div class="case-item science">
+                        <img src="images/person-holding-a-smartphone-892757.jpg" alt="" />
+                    </div>
+                    <div class="case-item mobile web science">
+                        <img src="images/blur-close-up-code-computer-546819.jpg" alt="" />
+                    </div>
+                    <div class="case-item mobile">
+                        <img src="images/bokeh-photography-of-person-holding-turned-on-iphone-1440727.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+            <!-- 服务流程 -->
+            <section id="service" class="service">
+                <h2 class="title1">服务流程</h2>
+                <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, illo.</p>
+                <div class="services">
+                    <div class="service-item">
+                        <i class="fas fa-comments"></i>
+                        <h2 class="service-title">需求沟通</h2>
+                        <p class="service-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-gavel"></i>
+                        <h2 class="service-title">项目评估</h2>
+                        <p class="service-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-file-signature"></i>
+                        <h2 class="service-title">签订合同</h2>
+                        <p class="service-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user"></i>
+                        <h2 class="service-title">提案阶段</h2>
+                        <p class="service-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h2 class="service-title">制作阶段</h2>
+                        <p class="service-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-check"></i>
+                        <h2 class="service-title">网站验收</h2>
+                        <p class="service-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 团队介绍 -->
+            <section id="team-intro" class="team-intro section-bg">
+                <h2 class="title1">团队介绍</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="images/man-wearing-black-suit-2955376.jpg" alt="" />
+                        </div>
+                        <h4 class="name">张三</h4>
+                        <p class="position">前端工程师</p>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#"><i class="fab fa-weixin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-weibo"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="" />
+                        </div>
+                        <h4 class="name">李四</h4>
+                        <p class="position">UI设计师</p>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#"><i class="fab fa-weixin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-weibo"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg" alt="" />
+                        </div>
+                        <h4 class="name">王二</h4>
+                        <p class="position">后端工程师</p>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#"><i class="fab fa-weixin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-weibo"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="images/business-woman-2697954_1920.jpg" alt="" />
+                        </div>
+                        <h4 class="name">刘五</h4>
+                        <p class="position">市场专员</p>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#"><i class="fab fa-weixin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-weibo"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 数据部分 -->
+            <section class="data-section">
+                <div class="data-piece">
+                    <i class="fas fa-code"></i>
+                    <div class="num">156</div>
+                    <div class="data-desc">行代码</div>
+                </div>
+                <div class="data-piece">
+                    <i class="fas fa-award"></i>
+                    <div class="num">288</div>
+                    <div class="data-desc">个奖项</div>
+                </div>
+                <div class="data-piece">
+                    <i class="fas fa-laugh-wink"></i>
+                    <div class="num">1588</div>
+                    <div class="data-desc">位客户</div>
+                </div>
+                <div class="data-piece">
+                    <i class="fas fa-folder"></i>
+                    <div class="num">200</div>
+                    <div class="data-desc">个项目</div>
+                </div>
+            </section>
+            <!-- 公司动态 -->
+            <section id="company-activities" class="company-activities">
+                <h2 class="title1">公司动态</h2>
+                <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, illo.</p>
+                <div class="activities">
+                    <div class="activity">
+                        <div class="act-image-wrapper">
+                            <img src="images/activity01-image.jpg" alt="" />
+                        </div>
+                        <div class="meta">
+                            <p class="data-published"><i class="far fa-calendar"></i>2019年12月1日</p>
+                            <p class="comments"><i class="far fa-comments"></i>33条评论</p>
+                        </div>
+                        <h2 class="act-title">Lorem ipsum dolor sit.</h2>
+                        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, earum!</article>
+                        <button class="read-more-btn">阅读更多</button>
+                    </div>
+                    <div class="activity">
+                        <div class="act-image-wrapper">
+                            <img src="images//watercrafts-on-river-3464632.jpg" alt="" />
+                        </div>
+                        <div class="meta">
+                            <p class="data-published"><i class="far fa-calendar"></i>2019年12月1日</p>
+                            <p class="comments"><i class="far fa-comments"></i>33条评论</p>
+                        </div>
+                        <h2 class="act-title">Lorem ipsum dolor sit.</h2>
+                        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, earum!</article>
+                        <button class="read-more-btn">阅读更多</button>
+                    </div>
+                    <div class="activity">
+                        <div class="act-image-wrapper">
+                            <img src="images/red-suspension-bridge-3493772.jpg" alt="" />
+                        </div>
+                        <div class="meta">
+                            <p class="data-published"><i class="far fa-calendar"></i>2019年12月1日</p>
+                            <p class="comments"><i class="far fa-comments"></i>33条评论</p>
+                        </div>
+                        <h2 class="act-title">Lorem ipsum dolor sit.</h2>
+                        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, earum!</article>
+                        <button class="read-more-btn">阅读更多</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 底部信息 -->
+        <footer>
+            <div class="footer-menus">
+                <div class="contact-us">
+                    <p class="menu-title">联系我们</p>
+                    <p>Lorem ipsum dolor sit, amet conset.</p>
+                    <p>Lorem ipsum dolor sit, amet conset.</p>
+                    <p>Lorem ipsum dolor sit, amet conset.</p>
+                    <p>Lorem ipsum dolor sit, amet conset.</p>
+                </div>
+                <div class="service-menu footer-menu">
+                    <p class="menu-title">服务概览</p>
+                    <ul class="menu-items">
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                    </ul>
+                </div>
+                <div class="service-menu footer-menu">
+                    <p class="menu-title">成功案例</p>
+                    <ul class="menu-items">
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                    </ul>
+                </div>
+                <div class="service-menu footer-menu">
+                    <p class="menu-title">公司动态</p>
+                    <ul class="menu-items">
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                    </ul>
+                </div>
+                <div class="service-menu footer-menu">
+                    <p class="menu-title">帮助与支持</p>
+                    <ul class="menu-items">
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                        <li><a href="#">Loremisum</a></li>
+                    </ul>
+                </div>
+                <p class="icp-info">京ICP备 12345678901-1 号</p>
+                <p class="rights">@copyright; 2020 kreios 响应式网站 版权所有</p>
+                <div class="scroll-top">
+                    <a href="#home"><i class="fas fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+        <script src="libs/isotope/isotope.pkgd.min.js"></script>
+        <script src="libs/anime/anime.min.js"></script>
+        <script src="libs/glide/glide.min.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
